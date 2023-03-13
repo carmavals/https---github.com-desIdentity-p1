@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+canvas {
+  display: flex;
+    
+}
+
+
+div{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#t2{
+  display: flex;
+  position: relative;
+  top: 60rem;
+}
+h5{
+  display: flex;
+  width: max-content;
+  color: white;
+  margin: 0 15rem;
+  padding: auto;
+}
+
