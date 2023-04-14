@@ -228,11 +228,16 @@ imagenes6[6] = c1.loadImage('data/c1/i31.jpg')
 imagenes6[7] = c1.loadImage('data/c1/i32.jpg')    
 imagenes6[8] = c1.loadImage('data/c1/i33.jpg') 
 
-lab[0] = c1.loadImage('data/c1/i21.jpg')
-lab[1] = c1.loadImage('data/c1/i22.jpg')
-lab[2] = c1.loadImage('data/c1/i23.jpg')
-lab[3] = c1.loadImage('data/c1/i24.jpg')
-lab[4] = c1.loadImage('data/c1/i26.jpg')
+lab[0] = c1.loadImage('data/ruleta2/clau3.jpg')
+lab[1] = c1.loadImage('data/ruleta2/clau2.jpg')
+lab[2] = c1.loadImage('data/ruleta2/FOTOS_121(2).jpg')
+lab[3] = c1.loadImage('data/ruleta2/dan2.jpg')
+lab[4] = c1.loadImage('data/ruleta2/daph3.jpg')
+lab[5] = c1.loadImage('data/ruleta2/daph2.jpg')
+lab[6] = c1.loadImage('data/ruleta2/fer2.jpg')
+lab[7] = c1.loadImage('data/ruleta2/fer3.jpg')
+lab[8] = c1.loadImage('data/ruleta2/lu2.jpg')
+lab[9] = c1.loadImage('data/ruleta2/lu3.jpg')
   }
   c1.setup = function () {
     let canvas3 = c1.createCanvas(1980, 900)
@@ -248,6 +253,7 @@ lab[4] = c1.loadImage('data/c1/i26.jpg')
   let y = c1.mouseY
   let ix = c1.width - c1.mouseX
   let iy = c1.height - c1.mouseY
+ 
     c1.background(0)
     let transparencia = 255
     if(fotos == true){
@@ -271,35 +277,35 @@ lab[4] = c1.loadImage('data/c1/i26.jpg')
         c1.background(0)
         c1.tint(255,255,255)
         c1.image(lab[3],ix,c1.height/5,iy, iy)
-        c1.image(imagenes3[1], x, c1.height/5,y,y )
+        c1.image(lab[2], x, c1.height/5,y,y )
       }
 
       if(l == true){
         c1.background(0)
         c1.tint(255,255,255)
-        c1.image(lab[1],ix,c1.height/5,iy, iy)
-        c1.image(img, x, c1.height/5,y,y)
+        c1.image(lab[9],ix,c1.height/5,iy, iy)
+        c1.image(lab[8], x, c1.height/5,y,y)
       }
 
       if(f == true){
         c1.background(0)
         c1.tint(255,255,255)
-        c1.image(lab[0],ix,c1.height/5,iy, iy)
-        c1.image(img2, x, c1.height/5,y,y)
+        c1.image(lab[7],ix,c1.height/5,iy, iy)
+        c1.image(lab[6], x, c1.height/5,y,y)
       }
 
       if(p == true){
         c1.background(0)
         c1.tint(255,255,255)
-       c1.image(lab[4],ix,c1.height/5,iy, iy)
-        c1.image(imagenes5[3], x, c1.height/5,y,y)
+       c1.image(lab[5],ix,c1.height/5,iy, iy)
+        c1.image(lab[4], x, c1.height/5,y,y)
       }
 
       if(c == true){
         c1.background(0)
         c1.tint(255,255,255)        
-        c1.image(lab[2], ix, c1.height/5,iy, iy)
-        c1.image(imagenes6[8], x, c1.height/5,y,y)
+        c1.image(lab[0], ix, c1.height/5,iy, iy)
+        c1.image(lab[1], x, c1.height/5,y,y)
       }
 
       
